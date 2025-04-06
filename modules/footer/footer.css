@@ -1,0 +1,10 @@
+.footer {
+    background-color: #0b1d3a; 
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+  }
+  

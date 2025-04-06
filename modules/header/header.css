@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b1d3a;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header-left,
+  .header-center,
+  .header-right {
+    flex: 1;
+  }
+  
+  .header-center {
+    text-align: center;
+  }
+  
+  .header-right {
+    text-align: right;
+    font-style: italic;
+    font-weight: 400;
+  }
+  
