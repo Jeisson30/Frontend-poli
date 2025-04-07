@@ -4,4 +4,15 @@
 <section class="prueba-module">
   <h1>Módulo guia para pruebas</h1>
   <p>Módulo base</p>
+  <button onclick="logout()">Cerrar sesión</button>
 </section>
+
+<script>
+   function logout() {
+    sessionStorage.removeItem("loggedIn");
+    window.location.href = "../login/login.html";
+  }
+  if (sessionStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "../login/login.html";
+  }
+</script>
