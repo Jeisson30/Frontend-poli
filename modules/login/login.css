@@ -1,0 +1,25 @@
+/* modules/login/login.css */
+body {
+    background: #111;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-container {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  input, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+  #error-msg {
+    color: red;
+    font-size: 0.9em;
+  }
+  
