@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Answers</title>
+  <link rel="stylesheet" href="Answers.css">
+</head>
+<body>
+<div class="container">
+  <h1>Answers</h1>
+  <table id="answersTable">
+    <thead>
+    <tr>
+      <th>Answer #</th>
+      <th>Description</th>
+      <th>Yes/No</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>0</td>
+      <td>Not answered yet</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>YES</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>NO - Compilation error</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>NO - Runtime error</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>NO - Time limit exceeded</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>NO - Presentation error</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>NO - Wrong answer</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>NO - If possible, contact staff</td>
+      <td>No</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h2>Modify answer</h2>
+  <form id="answerForm">
+    <label for="number">Number:</label>
+    <input type="number" id="number" min="0" max="7" required><br>
+
+    <label for="description">Description:</label>
+    <input type="text" id="description" required><br>
+
+    <label for="type">Type:</label>
+    <select id="type" required>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select><br>
+    <div class="button-group">
+    <button type="button" onclick="updateAnswer()" id="Send">Send</button>
+    <button type="reset" id="Clear">Clear</button>
+    </div>
+  </form>
+</div>
+
+<script src="Answers.js"></script>
+</body>
+</html>
