@@ -2,5 +2,45 @@
 <script src="modules/language/language.js" defer></script>
 
 <section class="language-module">
-  <h1>Módulo language</h1>
+  <div class="language-container">
+    <h2>Languages</h2>
+    <table id="languageTable">
+      <thead>
+        <tr>
+          <th>Language #</th>
+          <th>Name</th>
+          <th>Extension</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  
+    <div class="warning">
+      <p>
+        Clicking on a language number will DELETE it.<br />
+        <strong>WARNING:</strong> deleting a language will remove EVERYTHING related to it.<br />
+        It is NOT recommended to change anything while the contest is running.<br />
+        To insert/edit a language, enter the data below. Note that any changes will overwrite the already defined data.
+      </p>
+    </div>
+  
+    <form id="languageForm">
+      <div class="form-group">
+        <label for="number">Number:</label>
+        <input type="number" id="number" required />
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+      </div>
+      <div class="form-group">
+        <label for="extension">Extension:</label>
+        <input type="text" id="extension" required />
+      </div>
+      <div class="form-actions">
+        <button type="submit">Send</button>
+        <button type="reset">Clear</button>
+      </div>
+    </form>
+  </div>
 </section>

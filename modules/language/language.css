@@ -7,4 +7,63 @@
   .language-module h1 {
     color: #142544;
   }
+  .language-module {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .language-module h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  tr:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+  }
+  
+  .warning {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    border: 1px solid #ffeeba;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form label {
+    display: block;
+    margin: 8px 0;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button#clearBtn {
+    background-color: #6c757d;
+    margin-left: 10px;
+  }
+  #languageForm {
+    text-align: center;
+  }
   

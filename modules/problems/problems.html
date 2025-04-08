@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="modules/problems/problems.css" />
+
+<section class="problems">
+  <h2 class="problems-title">Problems Management</h2>
+
+  <div class="problems-warning">
+    <strong>WARNING:</strong> Clicking on a problem number will delete it. Deleting a problem will remove <u>everything</u> related to it.  
+    It is NOT recommended to change anything while the contest is running.  
+    To import a problem, fill in the following fields.
+  </div>
+
+  <form class="problems-form">
+    <label for="number">Number:</label>
+    <input type="text" id="number" name="number" />
+
+    <label for="shortName">Short Name:</label>
+    <input type="text" id="shortName" name="shortName" />
+
+    <label for="zipFile">Problem Package (ZIP):</label>
+    <input type="file" id="zipFile" name="zipFile" accept=".zip" />
+
+    <label for="colorName">Color Name:</label>
+    <input type="text" id="colorName" name="colorName" />
+
+    <label for="colorRgb">Color (RGB HTML format):</label>
+    <input type="text" id="colorRgb" name="colorRgb" />
+
+    <div class="problems-buttons">
+      <button type="submit">Send</button>
+      <button type="reset">Clear</button>
+    </div>
+  </form>
+
+  <p class="problems-note">
+    To build a problem package from files, use this link: <a href="#">Build</a>
+  </p>
+</section>
+
+<div class="problems-card">
+  <h3 class="problems-subtitle">Registered Problems</h3>
+  <div class="problems-table-container">
+    <table class="problems-table">
+      <thead>
+        <tr>
+          <th>Problem #</th>
+          <th>Short Name</th>
+          <th>Fullname</th>
+          <th>Basename</th>
+          <th>Descfile</th>
+          <th>Package File</th>
+          <th>Color</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0 (fake)</td>
+          <td>General</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
