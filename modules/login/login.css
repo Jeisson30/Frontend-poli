@@ -1,25 +1,68 @@
 /* modules/login/login.css */
 body {
-    background: #111;
-    color: #fff;
-    font-family: sans-serif;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-  }
-  .login-container {
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  input, button {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-  }
-  #error-msg {
-    color: red;
-    font-size: 0.9em;
-  }
-  
+  background-color: #000; /* negro para contraste */
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: #002B7F; /* azul Boca */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #FFD200; /* amarillo Boca */
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #333;
+}
+
+input::placeholder {
+  color: #666;
+}
+
+button {
+  padding: 10px;
+  background-color: #FFD200;
+  color: #002B7F;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6bd00;
+}
+
+#error-msg {
+  color: #ff6b6b;
+  margin-top: 10px;
+  font-size: 0.9em;
+  text-align: center;
+}
