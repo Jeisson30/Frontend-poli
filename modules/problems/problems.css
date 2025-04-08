@@ -1,0 +1,116 @@
+.problems {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .problems-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #0b1d3a;
+    text-align: center;
+  }
+  
+  .problems-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    border-left: 4px solid #ffc107;
+    margin-bottom: 20px;
+  }
+  
+  .problems-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .problems-form label {
+    font-weight: 500;
+  }
+  
+  .problems-form input[type="text"],
+  .problems-form input[type="file"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .problems-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .problems-buttons button {
+    background-color: #0b1d3a;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .problems-buttons button:hover {
+    background-color: #102b5a;
+  }
+  
+  .problems-note {
+    margin-top: 20px;
+    font-style: italic;
+    color: #666;
+  }
+  
+  /* Tarjeta para tabla separada */
+  .problems-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .problems-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #0b1d3a;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .problems-table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+  .problems-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .problems-table th,
+  .problems-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .problems-table th {
+    background-color: #0b1d3a;
+    color: #ffffff;
+  }
+  
+  .problems-table tr:nth-child(even) {
+    background-color: #f1f4f8;
+  }
+  
+  .problems-table tr:hover {
+    background-color: #e0eaf5;
+  }
+  
