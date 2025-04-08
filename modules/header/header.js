@@ -1,3 +1,6 @@
+import { checkLogin, logout } from "../../scripts/session-check.js";
+checkLogin("../../modules/login/login.html");
+
 export function renderizarFechaActual() {
     const fecha = new Date();
     const opciones = { day: '2-digit', month: '2-digit', year: 'numeric' };

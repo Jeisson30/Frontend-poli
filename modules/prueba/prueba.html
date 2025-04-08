@@ -7,12 +7,10 @@
   <button onclick="logout()">Cerrar sesión</button>
 </section>
 
-<script>
-   function logout() {
-    sessionStorage.removeItem("loggedIn");
-    window.location.href = "../login/login.html";
-  }
-  if (sessionStorage.getItem("loggedIn") !== "true") {
-    window.location.href = "../login/login.html";
-  }
+<script type="module">
+  import { checkLogin, logout } from "../../scripts/session-check.js";
+
+  checkLogin("../../modules/login/login.html");
+
+  document.querySelector("button").addEventListener("click", () => logout("../../modules/login/login.html"));
 </script>

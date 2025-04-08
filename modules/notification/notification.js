@@ -1,3 +1,6 @@
+import { checkLogin, logout } from "../../scripts/session-check.js";
+checkLogin("../../modules/login/login.html");
+
 class Notification {
     constructor(type, message, duration = 3000) {
         this.type = type;

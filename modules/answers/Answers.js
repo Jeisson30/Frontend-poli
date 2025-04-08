@@ -1,3 +1,5 @@
+import { checkLogin, logout } from "../../scripts/session-check.js";
+checkLogin("../../modules/login/login.html");
 function updateAnswer() {
     const number = parseInt(document.getElementById('number').value);
     const description = document.getElementById('description').value;
@@ -18,3 +20,5 @@ function updateAnswer() {
         alert('No se encontró la fila especificada.');
     }
 }
+
+
