@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+button {
+    width: fit-content;
+    padding: 8px 16px;
+    margin-top: 5px;
+}
+
+button#Send {
+    background: greenyellow;
+    border-radius: 20%;
+    border-color: white;
+}
+button#Clear {
+    background: yellow;
+    border-radius: 20%;
+    border-color: white;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
