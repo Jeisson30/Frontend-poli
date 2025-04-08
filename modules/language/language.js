@@ -1,3 +1,6 @@
+import { checkLogin, logout } from "../../scripts/session-check.js";
+  checkLogin("../../modules/login/login.html");
+
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("languageForm");
     const tableBody = document.querySelector("#languageTable tbody");

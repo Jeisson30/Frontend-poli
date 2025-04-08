@@ -18,6 +18,13 @@
   
     <script type="module" src="scripts/main.js"></script>
   </body>
+  <script type="module">
+    import { checkLogin, logout } from "./scripts/session-check.js";
+  
+    checkLogin("./modules/login/login.html");
+  
+    // Puedes usar un botón con id o llamar a logout desde otro lugar
+  </script>
   
 </body>
 </html>
