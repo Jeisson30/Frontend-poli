@@ -4,6 +4,7 @@
 <section class="language-module">
   <div class="language-container">
     <h2>Languages</h2>
+
     <table id="languageTable">
       <thead>
         <tr>
@@ -14,7 +15,7 @@
       </thead>
       <tbody></tbody>
     </table>
-  
+
     <div class="warning">
       <p>
         Clicking on a language number will DELETE it.<br />
@@ -23,29 +24,27 @@
         To insert/edit a language, enter the data below. Note that any changes will overwrite the already defined data.
       </p>
     </div>
-  
+
     <form id="languageForm">
       <div class="form-group">
         <label for="number">Number:</label>
-        <input type="number" id="number" required />
+        <input type="number" id="number" placeholder="Enter number" required />
       </div>
+
       <div class="form-group">
         <label for="name">Name:</label>
-        <input type="text" id="name" required />
+        <input type="text" id="name" placeholder="Enter language name" required />
       </div>
+
       <div class="form-group">
         <label for="extension">Extension:</label>
-        <input type="text" id="extension" required />
+        <input type="text" id="extension" placeholder="Enter file extension" required />
       </div>
-      <div class="form-actions">
+
+      <div class="button-group">
         <button type="submit">Send</button>
-        <button type="reset">Clear</button>
+        <button type="reset" id="clearBtn">Clear</button>
       </div>
     </form>
   </div>
 </section>
-
-
-<script type="module" src="language.js"></script>
-
-
