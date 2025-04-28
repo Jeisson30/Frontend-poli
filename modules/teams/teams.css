@@ -1,0 +1,118 @@
+/* modules/teams/teams.css */
+
+.teams-module {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #150240; /* Fondo de módulo */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+}
+
+.teams-module h2 {
+    text-align: center;
+    color: #04BFBF;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+#teamForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    background-color: #150240;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#teamForm input {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #460273;
+    background-color: #150240;
+    color: #ffffff;
+}
+
+#teamForm input::placeholder {
+    color: #cccccc;
+}
+
+#teamForm button {
+    padding: 12px;
+    background-color: #04BFBF;
+    color: #131626;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#teamForm button:hover {
+    background-color: #03a5a5;
+}
+
+/* Tabla de equipos */
+#teamsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #150240;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#teamsTable th,
+#teamsTable td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #460273;
+}
+
+#teamsTable th {
+    background-color: #460273;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#teamsTable tr:hover {
+    background-color: #8303A6;
+}
+
+/* Botón eliminar */
+.delete-btn {
+    background-color: #8303A6;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #6c0273;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .teams-module {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    #teamForm input,
+    #teamForm button {
+        width: 100%;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+}
