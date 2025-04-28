@@ -1,7 +1,7 @@
 /* modules/login/login.css */
 body {
-  background-color: #000; /* negro para contraste */
-  color: #fff;
+  background-color: #131626; /* Oscuro para fondo */
+  color: #ffffff;
   font-family: 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
@@ -11,10 +11,10 @@ body {
 }
 
 .login-container {
-  background-color: #002B7F; /* azul Boca */
+  background-color: #150240; /* Oscuro para caja */
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ body {
 
 h2 {
   margin-bottom: 20px;
-  color: #FFD200; /* amarillo Boca */
+  color: #04BFBF; /* Color de acción */
 }
 
 form {
@@ -37,18 +37,18 @@ input {
   margin-bottom: 15px;
   border: none;
   border-radius: 5px;
-  background-color: #eee;
-  color: #333;
+  background-color: #460273; /* Fondo inputs */
+  color: #ffffff; /* Texto input */
 }
 
 input::placeholder {
-  color: #666;
+  color: #cccccc;
 }
 
 button {
   padding: 10px;
-  background-color: #FFD200;
-  color: #002B7F;
+  background-color: #8303A6; /* Botón principal */
+  color: #ffffff;
   font-weight: bold;
   border: none;
   border-radius: 5px;
@@ -57,7 +57,7 @@ button {
 }
 
 button:hover {
-  background-color: #e6bd00;
+  background-color: #460273; /* Hover más profundo */
 }
 
 #error-msg {

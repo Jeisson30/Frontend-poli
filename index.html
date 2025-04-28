@@ -15,16 +15,14 @@
     </div>
   
     <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   
     <script type="module" src="scripts/main.js"></script>
-  </body>
-  <script type="module">
-    import { checkLogin, logout } from "./scripts/session-check.js";
-  
-    checkLogin("./modules/login/login.html");
-  
-    // Puedes usar un botón con id o llamar a logout desde otro lugar
-  </script>
-  
+
+    <!-- El otro script también va dentro del body, pero NO fuera -->
+    <script type="module">
+      import { checkLogin, logout } from "./scripts/session-check.js";
+      checkLogin("./modules/login/login.html");
+    </script>
 </body>
 </html>
