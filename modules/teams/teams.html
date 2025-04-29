@@ -1,0 +1,41 @@
+<!-- modules/teams/teams.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Teams Management</title>
+</head>
+<body>
+    <section class="teams-module">
+        <h2>Teams Management</h2>
+
+        <!-- Formulario para registrar equipos -->
+        <form id="teamForm">
+            <input type="text" id="teamName" placeholder="Nombre del Equipo" required>
+            <input type="text" id="member1" placeholder="Integrante 1" required>
+            <input type="text" id="member2" placeholder="Integrante 2">
+            <input type="text" id="member3" placeholder="Integrante 3">
+            <input type="text" id="university" placeholder="Universidad" required>
+            <button type="submit">Registrar Equipo</button>
+        </form>
+
+        <!-- Tabla para mostrar equipos -->
+        <table id="teamsTable">
+            <thead>
+                <tr>
+                    <th>Equipo</th>
+                    <th>Integrante 1</th>
+                    <th>Integrante 2</th>
+                    <th>Integrante 3</th>
+                    <th>Universidad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Equipos se insertarán aquí -->
+            </tbody>
+        </table>
+    </section>
+    <script type="module" src="teams.js"></script>
+</body>
+</html>
