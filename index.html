@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Frontend Universidad</title>
-  <link rel="stylesheet" href="styles/global.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Frontend Universidad</title>
+    <link rel="stylesheet" href="styles/global.css" />
 </head>
 <body>
-    <div id="header"></div>
-  
-    <div id="main-container">
-      <div id="sidebar"></div>
-      <main id="content"></main>
-    </div>
-  
-    <div id="footer"></div>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  
-    <script type="module" src="scripts/main.js"></script>
+<div id="header"></div>
 
-    <!-- El otro script también va dentro del body, pero NO fuera -->
-    <script type="module">
-      import { checkLogin, logout } from "./scripts/session-check.js";
-      checkLogin("./modules/login/login.html");
-    </script>
+<div id="main-container">
+    <main id="content"></main>
+</div>
+
+<div id="footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="module" src="scripts/main.js"></script>
+
+<!-- El otro script también va dentro del body, pero NO fuera -->
+<script type="module">
+    import { checkLogin, logout } from "./scripts/session-check.js";
+    checkLogin("./modules/login/login.html");
+</script>
 </body>
 </html>
