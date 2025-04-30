@@ -1,5 +1,5 @@
-/* modules/teams/teams.css */
 
+/* Estilo general para el módulo de equipos */
 .teams-module {
     max-width: 1000px;
     margin: 30px auto;
@@ -112,7 +112,20 @@
         width: 100%;
     }
 
+    /* Tabla responsiva */
     table, th, td {
         font-size: 0.9rem;
+    }
+
+    /* Contenedor para permitir scroll horizontal en la tabla */
+    .table-container {
+        width: 100%;
+        overflow-x: auto; /* Permite desplazamiento horizontal */
+        -webkit-overflow-scrolling: touch; /* Mejora en iOS */
+    }
+
+    /* Ajuste del tamaño de la tabla para pantallas pequeñas */
+    #teamsTable {
+        min-width: 600px; /* Establece un mínimo para evitar que se haga demasiado pequeña */
     }
 }

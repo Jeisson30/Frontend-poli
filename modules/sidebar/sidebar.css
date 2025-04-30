@@ -1,18 +1,131 @@
+/* Estilos Generales */
+body {
+  background-color: #f4f4f9; /* Fondo claro para contrastar */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+div#dropdownMenu{
+  margin-left: -2em;
+  display: block;
+  background-color: #150240;
+}
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilos del Botón del Menú (Hamburguesa) */
+.menu-button {
+  margin-left: -2em;
+  display: block;
+  background-color: #150240;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-button:hover {
+  background-color: #150240;
+  transform: translateY(-2px);
+}
+
+.menu-button:active {
+  background-color: #3e8e41;
+}
+
+.hamburger {
+  display: none; /* Escondemos el ícono de hamburguesa en pantallas grandes */
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  position: relative;
+  z-index: 100;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: all 0.3s ease;
+}
+
+/* Estilos del Dropdown */
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 180px;
+  z-index: 1;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  transform: translateY(10px);
+}
+
+.dropdown.show {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.dropdown a {
+  color: #333;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.dropdown a:last-child {
+  border-bottom: none;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+  color: #4CAF50;
+}
+
+/* Sidebar */
 .sidebar {
-  width: 220px;
-  background-color: #131626; /* Más oscuro */
-  color: #ffffff;
-  padding: 20px;
-  height: 100%;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.5);
+  width: 250px;
+  background-color: #131626;
+  color: white;
+  padding: 30px 20px;
+  height: 100vh;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
   box-sizing: border-box;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+.sidebar.closed {
+  transform: translateX(-100%); /* Esconde el sidebar al hacer clic en el botón hamburguesa */
 }
 
 .sidebar-title {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ffffff33;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ffffff33;
   padding-bottom: 10px;
+  font-weight: bold;
+  color: #f4f4f9;
 }
 
 .sidebar-menu {
@@ -22,16 +135,25 @@
 }
 
 .sidebar-menu li {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .sidebar-menu a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 500;
-  transition: color 0.2s ease;
+  font-size: 18px;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+  display: block;
 }
 
 .sidebar-menu a:hover {
-  color: #04BFBF; /* Color vibrante en hover */
+  color: #04BFBF;
+  padding-left: 10px;
 }
+
+.sidebar-menu a:active {
+  color: #0D9B9B;
+}
+
+
