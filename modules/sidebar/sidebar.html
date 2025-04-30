@@ -1,32 +1,33 @@
 <link rel="stylesheet" href="modules/sidebar/sidebar.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-<script src="modules/sidebar/sidebar.js" defer></script>
+<div class="menu">
+  <button class="menu-button" id="menuBtn">☰</button>
+  <div id="dropdownMenu" class="dropdown">
+    <h2 class="sidebar-title">Módulos</h2>
+    <ul class="sidebar-menu">
+      <li>
+        <a href="#" onclick="loadModule('modules/teams/teams.html')">
+          <i class="fas fa-users"></i> Teams
+        </a>
+      </li>
+      <li>
+        <a href="#" onclick="loadModule('modules/language/language.html')">
+          <i class="fas fa-language"></i> Language
+        </a>
+      </li>
+      <li>
+        <a href="#" onclick="loadModule('modules/problems/problems.html')">
+          <i class="fas fa-brain"></i> Problems
+        </a>
+      </li>
+      <li>
+        <a href="#" onclick="loadModule('modules/answers/Answers.html')">
+          <i class="fas fa-question-circle"></i> Answers
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 
-<aside class="sidebar">
-  <h2 class="sidebar-title">Módulos</h2>
-  <ul class="sidebar-menu">
-    <li>
-      <a href="#" onclick="loadModule('modules/teams/teams.html')">
-        <i class="fas fa-users"></i> Teams
-      </a>
-    </li>
-    <li>
-      <a href="#" onclick="loadModule('modules/language/language.html')">
-        <i class="fas fa-language"></i> Language
-      </a>
-    </li>
-    <li>
-      <a href="#" onclick="loadModule('modules/problems/problems.html')">
-        <i class="fas fa-brain"></i> Problems
-      </a>
-    </li>
-    <li>
-      <a href="#" onclick="loadModule('modules/answers/Answers.html')">
-        <i class="fas fa-question-circle"></i> Answers
-      </a>
-    </li>
-  </ul>
-  
-</aside>
 
 <script type="module" src="sidebar.js"></script>

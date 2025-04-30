@@ -1,5 +1,10 @@
 import { renderizarFechaActual } from '../modules/header/header.js';
 
+import { initSidebarMenu } from '../modules/sidebar/sidebar.js';
+
+document.addEventListener("DOMContentLoaded", () => {
+  initSidebarMenu();
+});
 // Función general para cargar cualquier HTML en un contenedor
 async function loadComponent(containerId, path, callback) {
   try {
@@ -53,10 +58,14 @@ async function loadStaticComponent(containerId, path, cssPath = null, callback) 
 // Cargar automáticamente los componentes principales
 window.addEventListener('DOMContentLoaded', async () => {
   await loadStaticComponent('header', 'modules/header/header.html', 'modules/header/header.css', renderizarFechaActual);
-  await loadStaticComponent('sidebar', 'modules/sidebar/sidebar.html', 'modules/sidebar/sidebar.css');
+
+  // Llamamos al callback en loadStaticComponent para que ejecute initSidebarMenu después de cargar el sidebar
+  await loadStaticComponent('sidebar', 'modules/sidebar/sidebar.html', 'modules/sidebar/sidebar.css', initSidebarMenu);
+
   await loadStaticComponent('footer', 'modules/footer/footer.html'); // No necesita CSS si no lo tienes
   await loadModule('modules/teams/teams.html'); // Al inicio carga Teams
 });
+
 
 // Exponer loadModule para el sidebar
 window.loadModule = loadModule;
