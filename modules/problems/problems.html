@@ -4,8 +4,8 @@
   <h2 class="problems-title">Problems Management</h2>
 
   <div class="problems-warning">
-    <strong>WARNING:</strong> Clicking on a problem number will delete it. Deleting a problem will remove <u>everything</u> related to it.  
-    It is NOT recommended to change anything while the contest is running.  
+    <strong>WARNING:</strong> Clicking on a trash icon will delete the problem. Deleting a problem will remove <u>everything</u> related to it.
+    It is NOT recommended to change anything while the contest is running.
     To import a problem, fill in the following fields.
   </div>
 
@@ -16,8 +16,8 @@
     <label for="shortName">Short Name:</label>
     <input type="text" id="shortName" name="shortName" />
 
-    <label for="zipFile">Problem Package (ZIP):</label>
-    <input type="file" id="zipFile" name="zipFile" accept=".zip" />
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" />
 
     <label for="colorName">Color Name:</label>
     <input type="text" id="colorName" name="colorName" />
@@ -49,24 +49,18 @@
           <th>Descfile</th>
           <th>Package File</th>
           <th>Color</th>
+          <th>Actions</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>0 (fake)</td>
-          <td>General</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
+      <tbody></tbody>
     </table>
   </div>
 </div>
 
 <script type="module">
-  import { checkLogin, logout } from "../../scripts/session-check.js";
+  import { checkLogin } from "../../scripts/session-check.js";
+  import "../../repository/problemRepository.js";
+  import "./problems.js";
+
   checkLogin("../../modules/login/login.html");
 </script>
