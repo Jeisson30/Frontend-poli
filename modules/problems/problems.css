@@ -14,7 +14,6 @@
   text-align: center;
 }
 
-/* Advertencia */
 .problems-warning {
   background-color: #fff3cd;
   color: #856404;
@@ -25,7 +24,6 @@
   font-size: 0.95rem;
 }
 
-/* Formulario */
 .problems-form {
   display: flex;
   flex-direction: column;
@@ -91,7 +89,7 @@
   text-align: center;
 }
 
-/* Card de Problemas Registrados */
+
 .problems-card {
   background-color: #131626;
   padding: 20px;
@@ -137,7 +135,6 @@
   cursor: pointer;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .problems {
     padding: 15px;
